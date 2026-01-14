@@ -5,23 +5,91 @@ body {
   padding: 0;
 }
 
-div {
-  max-width: 600px;
-  margin: 40px auto;
-  background: #fff;
-  padding: 32px;
-  border-radius: 8px;
+.header {
+  background: #1976d2;
+  color: #fff;
+  padding: 20px 32px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  margin-bottom: 32px;
+  letter-spacing: 1px;
+  position: relative;
+  margin-left: 40px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+button, .add-btn {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+button:hover, .add-btn:hover {
+  background: #1565c0;
+}
+
+.signout-btn {
+  position: absolute;
+  right: 32px;
+  top: 20px;
+  background: #1565c0;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+.signout-btn:hover {
+  background: #0d47a1;
+}
+
+.card {
+  background: #fafafa;
+  border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  max-width: 700px;
+  /* Remove margin: 0 auto; */
+  margin-left: 40px; /* Add this for spacing from sidebar */
+  margin-top: 32px;
+  padding: 32px;
 }
 
-h1 {
+.header h1 {
   color: #1976d2;
-  margin-bottom: 8px;
+  margin-bottom:
+  
+  8px;
 }
 
-h2 {
+.header h2 {
   color: #333;
   margin-top: 24px;
+}
+
+.footer {
+  text-align: center;
+  color: #888;
+  font-size: 0.95rem;
+  margin-top: 40px;
+  margin-left: 40px;
 }
 
 ul {
